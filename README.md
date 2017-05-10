@@ -19,21 +19,33 @@ java -jar zipkin.jar
 
 ## bambam and  capnpc-go
 1、capnp
+
 wget https://github.com/sandstorm-io/capnproto/archive/v0.6.0.tar.gz
+
 tar xvf v0.6.0.tar.gz 
+
 cd capnproto-0.6.0/c++/cmake
+
 cmake ../
+
 make
+
 ll src/capnp/
 
 2、bambam
+
 go get github.com/shurcooL/go-goon
+
 git clone https://github.com/glycerine/bambam.git 
+
 cd bambam && make
 
 3、capnpc-go（ 'capnp compile -ogo ./schema.capnp' will need capnpc-go）
+
 go get github.com/glycerine/go-capnproto 
+
 git clone https://github.com/glycerine/go-capnproto 
+
 cd go-capnproto && make
 
 # build  
