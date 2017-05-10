@@ -6,6 +6,7 @@ wget -O zipkin.jar 'https://search.maven.org/remote_content?g=io.zipkin.java&a=z
 java -jar zipkin.jar   
 
 ## development
+
 1、define a struct in message.go  and run compile.sh
 2、add message protocol id in protocol.go
 3、add protocol id to HandlerMap in match/service/service_define.go
